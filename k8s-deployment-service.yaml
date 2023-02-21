@@ -16,10 +16,10 @@ spec:
         app: my-app
     spec:
       imagePullSecrets:
-      - name: ravi-docker-registry
+      - name: shashi-docker-registry
       containers:
       - name: skydevops-container
-        image: ravirekha1/skydevopsapp:13
+        image: shashidockerhub/repo_1:2
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -37,7 +37,7 @@ spec:
  ports:
   - targetPort: 8080
     port: 8080
-    nodePort: 30011
+    nodePort: 30012
  selector:
    app: my-app
 
